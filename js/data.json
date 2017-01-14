@@ -1,0 +1,350 @@
+var startData = [{}];
+var startTransform = [
+  {"<>":"div","id":"preloader","html":[
+      {"<>":"div","class":"loader","html":[
+          {"<>":"span","html":""},
+          {"<>":"span","html":""},
+          {"<>":"span","html":""},
+          {"<>":"span","html":""}
+        ]}
+    ]},
+  {"<>":"div","class":"home-page","html":[
+      {"<>":"div","class":"introduction","html":[
+          {"<>":"img","alt":"","src":"images/home_dp.jpg","html":""},
+          {"<>":"div","class":"mask","html":""},
+          {"<>":"div","class":"intro-content","html":[
+              {"<>":"h2","html":"JOB TITLE"},
+              {"<>":"p","id":"socialIcons","class":"social-media hidden-xs","html":""}
+            ]}
+        ]},
+      {"<>":"div","id":"menu","class":"menu","html":""}
+    ]},
+  {"<>":"div","class":"close-btn","html":""},
+  {"<>":"div","class":"profile-page","html":[
+      {"<>":"div","class":"image-container col-md-5 col-sm-12","html":[
+          {"<>":"div","class":"mask","html":""},
+          {"<>":"div","class":"main-heading  prof","html":""}
+        ]},
+      {"<>":"div","class":"content-container col-md-7 col-sm-12","html":[
+          {"<>":"div","class":"story clearfix","html":[
+              {"<>":"h2","class":"small-heading","html":"Heading"},
+              {"<>":"div","class":"col-lg-11 col-lg-offset-1","html":[
+                  {"<>":"div","class":"story-content clearfix","html":[
+                      {"<>":"img","alt":"","src":"images/dp.jpg","class":"col-xs-offset-1 col-sm-offset-0 col-sm-4 col-xs-10","html":""},
+                      {"<>":"div","class":"col-sm-8 col-xs-12","html":[
+                          {"<>":"h3","id":"prof-header","html":"HEADER"},
+                          {"<>":"a","href":"#","class":"hire-me","html":"More"},
+                          {"<>":"a","href":"#","html":"Home"}
+                        ]}
+                    ]}
+                ]}
+            ]},
+          {"<>":"div","id":"serviceData","class":"services-container clearfix","html":[
+              {"<>":"h2","class":"small-heading","html":"My Skills "}
+            ]},
+          {"<>":"div","id":"facts","class":"facts clearfix","html":""}
+        ]}
+    ]},
+  {"<>":"div","class":"resume-page","html":[
+      {"<>":"div","class":"image-container col-md-5 col-sm-12","html":[
+          {"<>":"div","class":"mask","html":""},
+          {"<>":"div","class":"main-heading resu","html":""}
+        ]},
+      {"<>":"div","id":"education","class":"content-container col-md-7 col-sm-12","html":""}
+    ]},
+  {"<>":"div","class":"portfolio-page","html":[
+      {"<>":"div","class":"image-container col-md-5 col-sm-12","html":[
+          {"<>":"div","class":"mask","html":""},
+          {"<>":"div","class":"main-heading port","html":""}
+        ]},
+      {"<>":"div","class":"content-container col-md-7 col-sm-12","html":[
+          {"<>":"div","class":"portfolio","html":[
+              {"<>":"h2","class":"small-heading","html":"PORTFOLIO"},
+              {"<>":"div","class":"project-container","html":[
+                  {"<>":"div","id":"portBtn","class":"project-controls","html":""},
+                  {"<>":"div","class":"projet-items clearfix","id":"projects","html":""}
+                ]}
+            ]},
+          {"<>":"div","class":"testimonials clearfix","html":[
+              {"<>":"h2","class":"small-heading","html":"REVIEWS FROM CLIENTS"},
+              {"<>":"div","class":"testimonials-container col-sm-10 col-sm-offset-1","html":[
+                  {"<>":"div","id":"portQuote","class":"owl-carousel","html":""}
+                ]}
+            ]},
+          {"<>":"div","id":"facts2","class":"facts clearfix","html":""}
+        ]}
+    ]},
+  {"<>":"div","class":"contact-page","html":[
+      {"<>":"div","class":"image-container col-md-5 col-sm-12","html":[
+          {"<>":"div","class":"mask","html":""},
+          {"<>":"div","class":"main-heading conta","html":""}
+        ]},
+      {"<>":"div","class":"content-container col-md-7 col-sm-12","html":[
+          {"<>":"div","html":[
+              {"<>":"h2","class":"small-heading","html":"Contact"},
+              {"<>":"div","class":"contact-form col-sm-11 clearfix","html":[
+                  [
+                    {"<>":"fieldset","html":[
+                        {"<>":"div","class":"col-sm-12","html":[
+                            {"<>":"input","id":"name","name":"name","placeholder":"Your Name*","type":"text","value":"","html":""}
+                          ]},
+                        {"<>":"div","class":"col-sm-12","html":[
+                            {"<>":"input","id":"email","name":"email","placeholder":"Your Email*","type":"text","value":"","html":""}
+                          ]},
+                        {"<>":"div","class":"col-xs-12","html":[
+                            {"<>":"textarea","cols":"5","id":"message","name":"message","placeholder":"Your Message....*","html":""}
+                          ]},
+                        {"<>":"div","class":"col-xs-12","html":[
+                            {"<>":"button","class":"submit active","html":"SEND"}
+                          ]},
+                        {"<>":"div","class":"error col-xs-12","html":[
+                            {"<>":"h3","html":"Error"}
+                          ]},
+                        {"<>":"div","class":"success col-xs-12","html":[
+                            {"<>":"h3","html":"Success. Your message was sent."}
+                          ]}
+                      ]},
+                    {"<>":"input","id":"name","name":"name","placeholder":"Your Name*","type":"text","value":"","html":""},
+                    {"<>":"input","id":"email","name":"email","placeholder":"Your Email*","type":"text","value":"","html":""},
+                    {"<>":"textarea","cols":"5","id":"message","name":"message","placeholder":"Your Message....*","html":""},
+                    {"<>":"button","class":"submit active","html":"SEND"}
+                  ]
+                ]}
+            ]},
+          {"<>":"div","class":"google-map","id":"google-map","html":""},
+          {"<>":"div","id":"contactData","class":"contact-details clearfix","html":[
+              {"<>":"h2","class":"small-heading","html":"CONTACT DETAILS"},
+              {"<>":"div","id":"socialIcons2","class":"col-xs-12 social-media","html":""}
+            ]}
+        ]}
+    ]}
+];
+
+var socialData = [
+{"icon":"facebook","label2":"Facebook"},
+{"icon":"twitter","label2":"Twitter"},
+{"icon":"plus","label2":"Google+"},
+{"icon":"linkedin","label2":"Linkedin"},
+{"icon":"github","label2":"Github"},
+{"icon":"flickr","label2":"Flickr"},
+{"icon":"codepen","label2":"Codepen"},
+];
+
+var socialTransform = [
+{"<>":"a","href":"#","class":"fa fa-${icon}","data-toggle":"tooltip","title":"${label2}","html":""}
+];
+
+var serviceData = [
+{"icon":"code","label":"commodo diam"},
+{"icon":"cogs","label":"in urna"},
+{"icon":"folder-open-o","label":"eros ac"},
+{"icon":"desktop","label":"mollis neque"},
+{"icon":"dashboard","label":"ipsum nec"},
+{"icon":"database","label":"est in"},
+{"icon":"bolt","label":"facilisis"},
+{"icon":"laptop","label":"laoreet commodo"},
+{"icon":"rocket","label":"sagi eros"},
+];
+
+var serviceTransform = [
+{"<>":"div","class":"services col-lg-4 col-md-6 col-sm-4","html":[
+    {"<>":"i","class":"fa fa-${icon}","html":""},
+    {"<>":"h3","html":"${label}"},
+    {"<>":"p","html":" Sed mi sem, sagi eros ac, laoreet commodo diam. Morbi id est in urna facilisis dictum. Mauris rutrum mollis neque a sodales. Mauris sed ipsum nec turpis finibus. "}
+  ]}
+];
+
+var menuData = [
+{"icon":"user","label":"profile","label2":"prof","t4":"Some info about me."},
+{"icon":"graduation-cap","label":"resume","label2":"resu","t4":"My prior experience and skills."},
+{"icon":"briefcase","label":"portfolio","label2":"port","t4":"Have a look at my work."},
+{"icon":"envelope-o","label":"contact","label2":"conta","t4":"Contact me."},
+];
+
+var menuTransform = [
+{"<>":"div","class":"${label}-btn","html":[
+    {"<>":"img","alt":"","src":"images/menu/${label}_btn.jpg","html":""},
+    {"<>":"div","class":"mask","html":" "},
+    {"<>":"div","class":"heading col-xs-11 col-xs-offset-1","html":[
+        {"<>":"div","class":"col-xs-2 hidden-xs","html":[
+            {"<>":"i","class":"fa fa-${icon}","html":""}
+          ]},
+        {"<>":"div","class":"col-sm-10 ${label2}","html":[
+
+            {"<>":"h3","html":"${t4}"}
+          ]}
+      ]}
+  ]}
+];
+
+var factData = [
+  {"number":"100","label":"FACT 1"},
+  {"number":"200","label":"FACT 2"},
+  {"number":"300","label":"FACT 3"},
+];
+
+var factTransform = [
+{"<>":"div","class":"col-xs-4","html":[
+    {"<>":"h3","html":"${label}"},
+    {"<>":"h1","html":"${number}+"}
+  ]}
+];
+
+var educationData = [
+  {"id":"edu","class":"education","class2":"education-container col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1","title":"EDUCATION"},
+  {"id":"job","class":"experience","class2":"experience-container col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1","title":"EXPERIENCE"},
+  {"id":"exp","class":"skills","class2":"clearfix","title":"SKILLS"},
+];
+
+var educationTransform = [
+{"<>":"div","class":"${class} clearfix","html":[
+    {"<>":"h2","class":"small-heading","html":"${title}"},
+    {"<>":"div","id":"${id}","class":"${class2}","html":" "}
+  ]}
+];
+
+var resData = [
+{"date":"01 Jan 0000 - 02 Jan 0000","location":"location A"},
+{"date":"02 Jan 0000 - 03 Jan 0000","location":"location B"},
+{"date":"03 Jan 0000 - 04 Jan 0000","location":"location C"},
+{"date":"04 Jan 0000 - 05 Jan 0000","location":"location D"},
+{"date":"05 Jan 0000 - 06 Jan 0000","location":"location E"},
+{"date":"06 Jan 0000 - 07 Jan 0000","location":"location F"},
+{"date":"07 Jan 0000 - 08 Jan 0000","location":"location G"},
+];
+
+var resTransform = [
+{"<>":"div","class":"item","html":[
+    {"<>":"div","class":"bullet hidden-xs","html":""},
+    {"<>":"div","class":"education-content","html":[
+        {"<>":"h3","html":"${location} / ${date}"},
+        {"<>":"p","html":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et pulvinar ligula. Praesent maximus ornare quam, id consectetur dui eleifend nec. Nam consectetur orci id nulla varius, quis facilisis dui vulputate. Sed ultrices eu erat non mollis. Phasellus ut libero."}
+      ]}
+  ]}
+];
+
+var jobData = [
+{"date":"01 Jan 0000 - 02 Jan 0000","location":"location A","job":"job A"},
+{"date":"02 Jan 0000 - 03 Jan 0000","location":"location B","job":"job B"},
+{"date":"03 Jan 0000 - 04 Jan 0000","location":"location C","job":"job C"},
+{"date":"04 Jan 0000 - 05 Jan 0000","location":"location D","job":"job D"},
+{"date":"05 Jan 0000 - 06 Jan 0000","location":"location E","job":"job E"},
+{"date":"06 Jan 0000 - 07 Jan 0000","location":"location F","job":"job F"},
+{"date":"07 Jan 0000 - 08 Jan 0000","location":"location G","job":"job G"},
+];
+
+var jobTransform = [
+{"<>":"div","class":"item","html":[
+    {"<>":"div","class":"bullet hidden-xs","html":" "},
+    {"<>":"div","class":"experience-content","html":[
+        {"<>":"h3","html":"${location} / ${date}"},
+        {"<>":"br","html":""},
+        {"<>":"h4","html":"${job}"},
+        {"<>":"p","html":" Maecenas hendrerit euismod lorem, vitae mollis odio consectetur a. Aliquam at viverra nunc. Fusce neque lectus, vehicula eget lectus ac, consequat mollis erat. Sed sed interdum nisl. Nulla maximus odio vitae turpis rhoncus tempus. Donec vel elit quis metus rutrum. "}
+      ]}
+  ]}
+];
+
+var expData = [
+  {"number":"10","label":"Skill 1"},
+  {"number":"20","label":"Skill 2"},
+  {"number":"30","label":"Skill 3"},
+  {"number":"40","label":"Skill 4"},
+  {"number":"50","label":"Skill 5"},
+  {"number":"60","label":"Skill 6"},
+  {"number":"70","label":"Skill 7"},
+  {"number":"80","label":"Skill 8"},
+  {"number":"90","label":"Skill 9"},
+];
+
+var expTransform = [
+{"<>":"div","class":"skill-container col-sm-4","html":[
+    {"<>":"h3","html":"${skill}"},
+    {"<>":"div","class":"skill","data-percent":"${number}","html":[
+        {"<>":"span","html":"${number}%"}
+      ]}
+  ]}
+];
+
+
+var portbtnData = [
+{"filter":"all","label":"All"},
+{"filter":".no1","label":"Label 1"},
+{"filter":".no2","label":"Label 2"},
+{"filter":".no3","label":"Label3"},
+
+];
+
+
+var portbtnTransform =
+[{"<>":"button","class":"filter","data-filter":"${filter}","html":"${label}"}];
+
+var portquoteData = [
+{"name":"Name 1","label":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
+{"name":"Name 2","label":"Vitae mollis odio consectetur."},
+{"name":"Name 3","label":"Praesent maximus ornare quam, id consectetur dui eleifend nec."},
+{"name":"Name 4","label":"Nunc pulvinar diam ac dapibus mollis."}
+];
+
+var portquoteTransform = [
+{"<>":"div","html":[
+    {"<>":"p","html":"${label}"},
+    {"<>":"h3","html":"${name}"}
+  ]}
+];
+
+var portData = [
+{"number":"1","label":"no1"},
+{"number":"2","label":"no2"},
+{"number":"3","label":"no3"},
+{"number":"4","label":"no1"},
+{"number":"5","label":"no2"},
+{"number":"6","label":"no3"},
+{"number":"7","label":"no1"},
+{"number":"8","label":"no2"},
+{"number":"9","label":"no3"},
+{"number":"10","label":"no1"},
+{"number":"11","label":"no2"},
+{"number":"12","label":"no3"}
+];
+
+﻿var portTransform = [
+  {"<>":"div","class":"col-lg-4 col-md-6 col-sm-4 col-xs-6 mix ${label}","html":[
+      {"<>":"div","class":"project","html":[
+          {"<>":"img","src":"images/portfolio/thumbs/image_1.jpg","alt":"","html":""},
+          {"<>":"div","class":"ovrly","html":" "},
+          {"<>":"div","class":"buttons","html":[
+              {"<>":"a","href":"#","class":"fa fa-link","html":""},
+              {"<>":"a","href":"#portfolio-${number}","class":"fa fa-search show-popup","html":""}
+            ]}
+        ]}
+    ]},
+  {"<>":"div","class":"pop-up-box","id":"portfolio-${number}","html":[
+      {"<>":"img","alt":"","src":"images/portfolio/image_1.jpg","class":" hidden-xs","html":""},
+      {"<>":"div","class":"popup-content","html":[
+          {"<>":"h3","html":"PROJECT NAME"},
+          {"<>":"p","html":" Quisque in tempor sapien, et cursus neque. Nunc pulvinar diam ac dapibus mollis. Etiam id iaculis lorem. Donec bibendum volutpat ante, eu consequat nisi suscipit at. Etiam interdum augue dolor, id auctor felis volutpat sed. Phasellus id ex ultrices, tempus leo eget, volutpat diam. In sit amet magna faucibus, molestie nisi in, hendrerit libero. Morbi auctor velit sagittis, elementum lorem eget, imperdiet nisl. "},
+          {"<>":"a","href":"#","html":"PREVIEW"}
+        ]}
+    ]}
+];
+
+
+var contactData = [
+{"icon":"map-marker","label":"label 1"},
+{"icon":"phone","label":"label 2"},
+{"icon":"fax","label":"label 3"},
+{"icon":"envelope","label":"label 4"},
+{"icon":"globe","label":"label 5"},
+{"icon":"eye","label":"label 6"}
+];
+
+var contactTransform = [
+{"<>":"div","class":"contact col-sm-4","html":[
+    {"<>":"p","html":[
+        {"<>":"i","class":"fa fa-${icon}","html":""},
+        {"<>":"br","html":""},
+        {"<>":"b","html":"${label}"}
+      ]}
+  ]}
+];

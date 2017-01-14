@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>json Portfolio Template</title>
+<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/modernizr/modernizr.js"></script>
+</head>
+<body id="start">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/json-jquery.js"></script>
+<script type="text/javascript" src="js/data.json"></script>
+<script>
+$(function(){
+  $('#start').json2html(startData,startTransform);
+  $('#socialIcons, #socialIcons2').json2html(socialData,socialTransform);
+  $('#menu').json2html(menuData,menuTransform);
+  $('#facts, #facts2').json2html(factData,factTransform);
+  $('#education').json2html(educationData,educationTransform);
+  $('#edu').json2html(resData,resTransform);
+  $('#job').json2html(jobData,jobTransform);
+  $('#exp').json2html(expData,expTransform);
+  $('#portBtn').json2html(portbtnData,portbtnTransform);
+  $('#portQuote').json2html(portquoteData,portquoteTransform);
+  $('#projects').json2html(portData,portTransform);
+  $('#serviceData').json2html(serviceData,serviceTransform);
+  $('#contactData').json2html(contactData,contactTransform);
+});
+</script>
+<script>
+var intro = ("<h1>HELLO<br>I'M <span>NAME</span> HERE</h1>"),
+    profi = ("<h1>PR<span>O</span>FILE</h1>"),
+    resum = ("<h1>RE<span>S</span>UME</h1>"),
+    portfo = ("<h1>POR<span>T</span>FOLIO</h1>"),
+    contac = ("<h1>CO<span>N</span>TACT</h1>"),
+    footer = ("<div><a>BEN EAVES</a><p>2016 All right reserved</p></div>");
+$( document ).ready(function() {
+  $(".intro-content").prepend(intro);
+  $(".prof").prepend(profi);
+  $(".resu").prepend(resum);
+  $(".port").prepend(portfo);
+  $(".conta").prepend(contac);
+  $(footer).attr({"class":"clearfix footer"}).appendTo("#education");
+  $(footer).attr({"class":"clearfix footer"}).insertAfter("#facts,#facts2,#contactData");
+  $("#prof-header").append("<p></p>").html("Quisque in tempor sapien, et cursus neque. Nunc pulvinar diam ac dapibus mollis. Etiam id iaculis lorem. Donec bibendum volutpat ante, eu consequat nisi suscipit at. Etiam interdum augue dolor, id auctor felis volutpat sed. Phasellus id ex ultrices, tempus leo eget, volutpat diam. In sit amet magna faucibus, molestie nisi in, hendrerit libero. Morbi auctor velit sagittis, elementum lorem eget, imperdiet nisl.").clone().appendTo("#prof-header").clone().appendTo("#prof-header");
+});
+</script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-easing/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/easy-pie-charts/jquery.easypiechart.min.js"></script>
+<script type="text/javascript" src="js/mixitup/jquery.mixitup.min.js"></script>
+<script type="text/javascript" src="js/popup/jquery.popup.min.js"></script>
+<script type="text/javascript" src="js/owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/gMap/jquery.gmap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
